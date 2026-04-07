@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Владислав & Кристина | Приглашение</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Caveat:wght@400;500;600;700&family=Marck+Script&family=Tangerine:wght@400;700&family=Great+Vibes&family=Allura&display=swap" rel="stylesheet">
+    <!-- Добавьте эти строки после существующих подключений шрифтов -->
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@300;400;500;600;700&family=Tangerine:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="hero">
+        <img src="1.JPG" alt="Фон свадьбы" class="hero-background">
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-names">
+            <h1>Владислав <span class="amp">&</span> Кристина</h1>
+        </div>
+        <!-- Кнопка управления музыкой -->
+        <!-- Кнопка управления музыкой -->
+        <button id="musicToggle" class="music-btn" aria-label="Включить музыку">
+            <svg class="music-icon" viewBox="0 0 24 24" width="22" height="22">
+                <path fill="currentColor" d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+            </svg>
+            <span class="music-text">Включите музыку</span>
+        </button>
+
+        <div class="ticker-container">
+            <div class="ticker-content" id="tickerText">приглашение на свадьбу</div>
+        </div>
+    </section>
+
+    <!-- Новая секция (вставьте после hero секции) -->
+<!-- Обновленная секция с измененной структурой календаря -->
+    <section class="invitation-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="capital-d">Д</span>орогие наши родные и любимые!
+            </h2>
+            
+            <p class="section-text">
+                Любовь - это путешествие, и мы рады, что Вы часть нашего путешествия в семейную жизнь
+            </p>
+
+            <!-- Календарь (ограничен по ширине) -->
+            <div class="calendar-wrapper">
+                <div class="calendar">
+                    <div class="calendar-month">Август</div>
+                    
+                    <div class="calendar-content">
+                        <div class="calendar-weekdays">
+                            <span>пн</span>
+                            <span>вт</span>
+                            <span>ср</span>
+                            <span>чт</span>
+                            <span>пт</span>
+                            <span>сб</span>
+                            <span>вс</span>
+                        </div>
+                        
+                        <div class="calendar-dates">
+                            <span>24</span>
+                            <span>25</span>
+                            <span>26</span>
+                            <span>27</span>
+                            <span>28</span>
+                            <span>29</span>
+                            <span>30</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Фото на всю ширину -->
+            <div class="full-width-photo">
+                <img src="loc.jpg" alt="Фото" class="couple-photo">
+            </div>
+
+            <!-- Блок локации с фоном на всю ширину -->
+            <div class="location-block full-width" style="background-image: url('fon3.png');">
+            <div class="location-content">
+                    <h3 class="location-title">Локация</h3>
+                    <p class="location-text">г. Барнаул, проспект Калинина, здание 21Б</p>
+                </div>
+            </div>
+
+            <!-- Карта на всю ширину (без фона, отдельно) -->
+            <div class="full-width-map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7c90577a6df46bb472fef04fc3b605a9fadbffb8f376bb30f3c43b6c1039bde6&amp;source=constructor" 
+                        width="100%" 
+                        height="400" 
+                        frameborder="0"
+                        style="border:0; display: block;"
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция программы дня -->
+    <!-- Секция программы дня -->
+    <section class="schedule-section">
+        <div class="container">
+            <h2 class="section-title schedule-title">Программа дня</h2>
+            
+            <div class="schedule-timeline">
+                <!-- Элемент 1: Сбор гостей -->
+                <div class="timeline-item">
+                    <div class="timeline-left">
+                        <span class="event-name">Сбор гостей</span>
+                    </div>
+                    <div class="timeline-line"></div>
+                    <div class="timeline-right">
+                        <span class="event-time">14:00</span>
+                    </div>
+                </div>
+                
+                <!-- Элемент 2: Фуршет -->
+                <!-- <div class="timeline-item">
+                    <div class="timeline-left">
+                        <span class="event-name">Фуршет</span>
+                    </div>
+                    <div class="timeline-line"></div>
+                    <div class="timeline-right">
+                        <span class="event-time">15:00-16:00</span>
+                    </div>
+                </div> -->
+                
+                <!-- Элемент 3: Церемония -->
+                <div class="timeline-item">
+                    <div class="timeline-left">
+                        <span class="event-name">Церемония</span>
+                    </div>
+                    <div class="timeline-line"></div>
+                    <div class="timeline-right">
+                        <span class="event-time">15:00</span>
+                    </div>
+                </div>
+                
+                <!-- Элемент 4: Банкет -->
+                <div class="timeline-item">
+                    <div class="timeline-left">
+                        <span class="event-name">Банкет</span>
+                    </div>
+                    <div class="timeline-line"></div>
+                    <div class="timeline-right">
+                        <span class="event-time">16:00</span>
+                    </div>
+                </div>
+                
+                <!-- Элемент 5: Торт -->
+                <!-- <div class="timeline-item">
+                    <div class="timeline-left">
+                        <span class="event-name">Торт</span>
+                    </div>
+                    <div class="timeline-line"></div>
+                    <div class="timeline-right">
+                        <span class="event-time">20:00</span>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Секция дресс-кода -->
+    <section class="dresscode-section" style="background-image: url('fon3.png');">
+        <div class="container">
+            <h2 class="section-title dresscode-title">Дресс-код</h2>
+            
+            <p class="dresscode-text">
+                Мы ждем и с удовольствием готовимся к нашему дню!<br>
+                Поддержите нас своими улыбками и объятиями,<br>
+                а также красивыми нарядами в палитре торжества
+            </p>
+            
+            <!-- Цветовая палитра из кружков -->
+            <div class="color-palette">
+                <div class="color-circle" style="background-color: #442B26;" title="#442B26"></div>
+                <div class="color-circle" style="background-color: #725849;" title="#725849"></div>
+                <div class="color-circle" style="background-color: #A47F6C;" title="#A47F6C"></div>
+                <div class="color-circle" style="background-color: #C1A08F;" title="#C1A08F"></div>
+                <div class="color-circle" style="background-color: #D8C0AF;" title="#D8C0AF"></div>
+            </div>
+
+            <!-- Новый блок -->
+            <p class="inspiration-text">Вдохновляйтесь нарядами</p>
+            
+            <div class="dresscode-gallery">
+            <div class="gallery-container">
+                    <div class="gallery-track" id="galleryTrack">
+                        <div class="gallery-slide">
+                            <img src="dress2.JPG" alt="Пример наряда 1" class="dresscode-inspiration">
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="dress3.JPG" alt="Пример наряда 2" class="dresscode-inspiration">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Стрелка влево -->
+                <button class="gallery-btn prev" id="galleryPrev" aria-label="Предыдущее фото">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                    </svg>
+                </button>
+                
+                <!-- Стрелка вправо -->
+                <button class="gallery-btn next" id="galleryNext" aria-label="Следующее фото">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </svg>
+                </button>
+            </div>
+    </section>
+
+        <!-- Секция анкеты гостя -->
+    <section class="guest-section">
+        <div class="container">
+            <div class="guest-card">
+                <h2 class="section-title guest-title">Анкета гостя</h2>
+                    <span style="display: block; font-size: 1.2rem; color: #595b4e;margin-top: -30px; margin-bottom: 10px;">
+                        Пожалуйста, ответьте до 1 августа 2026
+                    </span>
+                <form class="guest-form">
+                    <!-- Поле Фамилия Имя -->
+                    <div class="form-group">
+                        <label for="name" class="form-label">Фамилия, имя</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder=" ">
+                    </div>
+                    
+                    <!-- Подтверждение присутствия (в столбик) -->
+                    <div class="form-group">
+                        <label class="form-label">Подтверждение присутствия</label>
+                        <div class="radio-group-vertical">
+                            <label class="radio-label">
+                                <input type="radio" name="attendance" value="yes" class="radio-input">
+                                <span class="radio-custom"></span>
+                                <span class="radio-text">Буду</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="attendance" value="no" class="radio-input">
+                                <span class="radio-custom"></span>
+                                <span class="radio-text">Не смогу</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Поле Количество гостей (новое) -->
+                    <div class="form-group">
+                        <label class="form-label">Количество гостей (включая вас)</label>
+                        <div class="guests-counter">
+                            <button type="button" class="counter-btn" id="decrementGuests">-</button>
+                            <span class="guests-count" id="guestsCount">1</span>
+                            <button type="button" class="counter-btn" id="incrementGuests">+</button>
+                        </div>
+                        <input type="hidden" name="guests" id="guestsInput" value="1">
+                    </div>
+                    
+                    <!-- Предпочтения по алкоголю -->
+                    <div class="form-group">
+                        <label class="form-label">Предпочтения по алкоголю</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="alcohol" value="wine" class="checkbox-input">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-text">Вино</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="alcohol" value="champagne" class="checkbox-input">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-text">Шампанское</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="alcohol" value="whiskey" class="checkbox-input">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-text">Виски</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="alcohol" value="vodka" class="checkbox-input">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-text">Водка</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="alcohol" value="cocktails" class="checkbox-input">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-text">Коктейли</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="alcohol" value="none" class="checkbox-input">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-text">Не пью алкоголь</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Кнопка отправки -->
+                    <div class="form-group submit-group">
+                        <button type="submit" class="submit-btn">Отправить</button>
+                    </div>
+                </form>
+
+                <!-- <div class="form-group telegram-group">
+                    <label class="form-label">Общий чат</label>
+                    <p class="telegram-text">
+                        Присоединяйтесь к нашему общему чату в Telegram, чтобы быть в курсе всех новостей и обсуждать детали свадьбы с другими гостями!
+                    </p>
+                    <a href="https://t.me/+ByIQbnNkn5kxMmYy" class="telegram-button" target="_blank">
+                        <svg class="telegram-icon" viewBox="0 0 24 24" width="20" height="20">
+                            <path fill="currentColor" d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-1.787 8.435c-.132.586-.479.732-.971.456l-2.68-1.976-1.293 1.244c-.143.143-.263.263-.539.263l.193-2.71 4.934-4.457c.215-.191-.047-.3-.334-.109l-6.097 3.84-2.627-.877c-.571-.179-.582-.571.119-.845l10.26-3.956c.475-.175.891.117.736.832z"/>
+                        </svg>
+                        Перейти в Telegram-чат
+                    </a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция пожеланий -->
+    <!-- <section class="wishes-section" style="background-image: url('fon3.png');">
+        <div class="container">
+            <h2 class="section-title wishes-title">Пожелания</h2>
+            
+            <div class="wishes-content">
+                <p class="wishes-text">
+                    Дорогие наши друзья и близкие!
+                </p>
+                <p class="wishes-text">
+                    Мы будем счастливы видеть вас на нашем торжестве, и самый лучший подарок для нас — это ваше присутствие и хорошее настроение. Если вы планировали порадовать нас цветами, у нас есть небольшая просьба: вместо срезанных букетов, которые, к сожалению, быстро вянут, мы выбрали цветочную подписку — это позволит нам получать свежие цветы и радоваться им целый месяц после свадьбы!
+                </p>
+                <p class="wishes-text">
+                    Если вы хотите внести вклад в нашу подписку, просто перейдите по ссылке:
+                </p>
+                
+            <a href="https://bloomles.ru/product/alina-daniil/" class="wishes-button" target="_blank">
+                Перейти к подписке
+            </a>                
+
+                <p class="wishes-text">
+                    А если вы теряетесь в выборе подарка, будем искренне благодарны за любой вклад в наше семейное будущее в конвертике
+                </p>
+                
+               
+                <div class="children-info">
+                    <p class="children-text">
+                        Уважаемые гости, обращаем ваше внимание, что наша свадьба пройдет без детей. Возрастное ограничение — строго 10+
+                    </p>
+                    <p class="children-text">
+                        Мы будем рады видеть именно вас! К сожалению, формат торжества не позволяет пригласить дополнительных гостей.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Секция таймера -->
+    <section class="timer-section">
+        <div class="container">
+            <h2 class="section-title timer-title">Наша встреча через...</h2>
+            
+            <div class="timer-container">
+                <div class="timer-block">
+                    <span class="timer-number" id="days">00</span>
+                    <span class="timer-label">дни</span>
+                </div>
+                <div class="timer-separator">:</div>
+                <div class="timer-block">
+                    <span class="timer-number" id="hours">00</span>
+                    <span class="timer-label">часы</span>
+                </div>
+                <div class="timer-separator">:</div>
+                <div class="timer-block">
+                    <span class="timer-number" id="minutes">00</span>
+                    <span class="timer-label">минуты</span>
+                </div>
+                <div class="timer-separator">:</div>
+                <div class="timer-block">
+                    <span class="timer-number" id="seconds">00</span>
+                    <span class="timer-label">секунды</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="wedding-footer">
+        <div class="footer-photo">
+            <img src="2.jpg" alt="Даниил и Алина" class="footer-image">
+        </div>
+        
+        <div class="footer-content">
+            <div class="container">
+                <p class="footer-waiting">Наша ведущая:</p>
+                <p class="footer-names">Ксения +7-913-225-91-01</p>
+                <p class="footer-waiting">Невеста:</p>
+                <p class="footer-names">Кристина +7-996-328-56-26</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
