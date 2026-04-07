@@ -1941,3 +1941,20 @@ section, footer {
         gap: 20px;
     }
 }
+
+/* Стиль для одного фото вместо галереи */
+.single-photo {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.single-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    aspect-ratio: 3/4;
+    object-fit: cover;
+}
