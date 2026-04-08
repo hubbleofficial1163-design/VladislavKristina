@@ -1,3 +1,4 @@
+
 /* style.css */
 * {
     margin: 0;
@@ -572,7 +573,7 @@ html, body {
 }
 
 /* Точка на вертикальной линии */
-.timeline-item::after {
+/* .timeline-item::after {
     content: '';
     position: absolute;
     left: 120px;
@@ -583,7 +584,7 @@ html, body {
     border-radius: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-}
+} */
 
 /* Адаптация для маленьких экранов */
 @media (max-width: 400px) {
@@ -1957,4 +1958,144 @@ section, footer {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     aspect-ratio: 3/4;
     object-fit: cover;
+}
+
+
+/* Timing - Расписание дня */
+.timing-section {
+    background: var(--beige, #ffffff);
+    position: relative;
+    overflow: hidden;
+    padding: 60px 20px;
+}
+
+.timing-container {
+    background: var(--white, #ffffff);
+    border-radius: 25px;
+    padding: 40px 30px;
+    box-shadow: 0 20px 60px rgba(26, 58, 47, 0.1);
+    position: relative;
+    z-index: 2;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--olive-green, #6b8e23);
+    opacity: 0.3;
+}
+
+.timeline-item:last-child::before {
+    display: none;
+}
+
+.timeline-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--beige, #f5f1e8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    position: relative;
+    z-index: 2;
+    border: 2px solid var(--olive-green, #6b8e23);
+    flex-shrink: 0;
+}
+
+.timeline-icon i {
+    font-size: 2rem;
+    color: var(--dark-green, #1a3a2f);
+}
+
+.timeline-content {
+    flex: 1;
+}
+
+.timeline-time {
+    font-size: 1.6rem;
+    color: var(--dark-green, #1a3a2f);
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-family: 'Caveat', cursive;
+}
+
+.timeline-text {
+    font-size: 1.2rem;
+    color: #5d4037;
+    opacity: 0.9;
+    font-family: 'Caveat', cursive;
+    line-height: 1.4;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .timing-container {
+        padding: 30px 20px;
+    }
+    
+    .timeline-icon {
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+    }
+    
+    .timeline-icon i {
+        font-size: 1.5rem;
+    }
+    
+    .timeline-time {
+        font-size: 1.4rem;
+    }
+    
+    .timeline-text {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .timeline-item {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .timeline-item::before {
+        left: 50%;
+        height: calc(100% - 60px);
+        top: 60px;
+        transform: translateX(-50%);
+    }
+    
+    .timeline-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .timeline-time {
+        font-size: 1.3rem;
+    }
+    
+    .timeline-text {
+        font-size: 1rem;
+    }
 }
