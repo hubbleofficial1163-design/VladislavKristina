@@ -213,7 +213,7 @@ function showModal(title, message, isError = false) {
 }
 
 // ========== GOOGLE SHEETS ==========
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz073B3yg7Xta7VxOO2XawppD-VZocyYKzoyKxqGppN4NcyooZX7NkmKIw2P4YD_0yJ/exec'; // ЗАМЕНИТЕ НА ВАШ URL
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx3gbEA-7QQ7BRw0PAxzwfxpTneEYxRP3EklnG-kP4rc1ItGhkC4R7A4uvltk1Y3h4A/exec'; // ЗАМЕНИТЕ НА ВАШ URL
 
 // Функция для сбора данных из формы
 function collectFormData(form) {
